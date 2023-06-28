@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- TODO: Include Font Awesome file here -->
+  <!-- TODO: Include Google Fonts file here -->
+  <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="script" href="scripts\index.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="css\index.css">
+  <link rel="stylesheet" href="css/signup.css">
+  <link rel="stylesheet" href="css/createpost.css">
+  
+
+</head>
+
+<body>
+  <div id="block_container">
+    <div id="bloc1">
+      <p class="icons">ScriBBler</p>
+      <p>Explore, Imagine, Create</p>
+    </div>
+    <div id="bloc2">
+      <script src="scripts/index.js"></script>
+      <button class="head-button" style=" float:right;"
+        onclick="openSignUp();">Sign Up</button>
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h3>Get Started</h3>
+            <hr>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter your Name" name="name" required>
+            <label for="userName"><b>Username</b></label>
+            <input type="text" placeholder="Enter your username" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter your password" name="psw" required>
+
+            <label for="cfm-psw"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Re-enter your Password" name="cfm-psw" required>
+
+            <div class="clearfix">
+
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <button class="head-button" style=" float:right"
+        onclick="openSignIn();">Sign In</button>
+      <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h3>Welcome Back!</h3>
+            <hr>
+            <label for="userName"><b>Username</b></label>
+            <input type="text" placeholder="Enter your username" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter your password" name="psw" required>
+
+            <div class="clearfix">
+
+              <button type="submit" class="signupbtn">Sign In</button>
+
+            </div>
+            <div id="id03">
+              <p style="text-align: center;"><b>Not a member?
+                  <a href="#" onclick="showSignUpModal();"><b>Sign In</b></a>
+                </b></p>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script src="scripts/index.js"></script>
+    </div>
+  </div>
+  <!-- TODO: Include all your code for the header and home page here -->
+  <div class="center">
+    <a  href="html/postslist.html">
+    <button class="btn-center" onclick="openPostsModal();" >All Posts</button></a>
+    <div id="id05" class="modal">
+      <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="">
+       
+        <script src="scripts/postslist.js"></script>
+        </form>
+        </div>
+
+
+
+    <button class="btn-center" onclick="openModal();">Create Post</button>
+    <div id="id04" class="modal">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="">
+        <div class="container">
+          <h3>Pen Your Post</h3>
+          <hr>
+          <label for="title"><b>Title</b></label>
+          <input type="text" placeholder="Enter title of your post" name="name" required>
+          <label for="contents"><b>Contents</b></label>
+          <input type="text" placeholder="Enter the contents of your post " name="contents" required>
+
+
+          <div class="clearfix">
+
+            <button type="submit" class="createpostbtn">Create</button>
+          </div>
+        </div>
+      </form>
+    </div>
+</body>
+
+</html>

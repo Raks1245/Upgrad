@@ -1,0 +1,32 @@
+.post-title {
+    text-align: center;
+  }
+
+.author-name {
+    text-align: left;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-button {
+    float: right;
+  }
+  .like-button {
+    color: blue;
+  }
+  .comment-section {
+    background-color: #ccc;
+    padding: 10px;
+  }
+  
+  .comment-input {
+    width: 80%;
+  }
+  
+  .comment-button {
+    color: red;
+  }
+    
